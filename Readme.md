@@ -4,17 +4,18 @@ jquery-deferred
 
 jQuery deferred lib for nodeJS.
 
-Code
-
-`var jQuery = require('jquery-deferred');`
+jQuery.Deferred(), is a chainable utility object that can register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.
 
 Doc [http://api.jquery.com/category/deferred-object/](http://api.jquery.com/category/deferred-object/)
-
 
 Installation
 -----------------------------
   
 >     npm install jquery-deferred
+
+In nodeJS
+
+`var jQuery = require('jquery-deferred');`
 
 
 
