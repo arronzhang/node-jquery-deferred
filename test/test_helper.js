@@ -3,8 +3,8 @@ QUnit = require("./qunit/qunit.js").QUnit;
 var qunitTap = require("./qunit/qunit-tap.js").qunitTap;
 jQuery = require( "../index.js" );
 
-var sys = tryRequireThese("sys", "system");
-puts = (typeof sys.puts === 'function') ? sys.puts : sys.print;
+var sys = tryRequireThese("util", "system");
+puts = (typeof sys.puts === 'function') ? sys.log : sys.print;
 
 qunitTap(QUnit, puts, {noPlan: true});
 
